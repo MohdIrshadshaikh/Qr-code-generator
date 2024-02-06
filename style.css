@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+
+}
+.body{
+    /* background-color: greenyellow; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.qrcode{
+    width: 50%;
+    height: 28%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 9px;
+
+
+}
+.qrcode h1{
+    font-size: 4.9vh;
+    padding: 10px;
+
+}
+.qrcode input{
+    width: 80%;
+    height: 60px;
+    margin-bottom: 17px;
+    font-size: 3vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 10px;
+
+}
+.qrcode button{
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: rgb(98, 223, 181);
+    font-size: 3vh;
+    color: white;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media only screen and (max-width: 615px) {
+   .qrcode{
+    width: 60vw;
+    background-color: rgb(255, 255, 255);
+   }
+  }
+
+  @media only screen and (max-width: 515px) {
+    .qrcode{
+     width: 80vw;
+     background-color: rgb(255, 255, 255);
+    }
+   }
+   @media only screen and (max-width: 395px) {
+    .qrcode{
+     width: 120vw;
+     margin: 10px;
+     background-color: rgb(255, 255, 255);
+    }
+    .qrcode h1{   
+       font-size: 2.9vh;
+       padding: 10px;
+    
+    }
+   }
+
+
